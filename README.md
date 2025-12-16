@@ -1,16 +1,140 @@
-# React + Vite
+# 📝 Smart Task Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Smart Task Manager is a modern, scalable **Todo / Task Management web application** built using **React** and **Redux Toolkit**.  
+The project demonstrates **real-world frontend architecture**, async API handling, global state management, and clean UI design.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Overview
+Smart Task Manager allows users to:
+- Create, manage, and track daily tasks
+- Handle async operations with proper loading and error states
+- Display global notifications for user actions
+- Maintain a clean and responsive UI
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the ESLint configuration
+- ➕ Add new tasks
+- 🗑️ Delete tasks
+- ✅ Toggle task completion
+- 🔄 Full CRUD operations
+- 🌐 Async API integration using `createAsyncThunk`
+- 🔔 Global notification system (success, error, warning)
+- 🧠 Centralized state management with Redux Toolkit
+- ⚡ Fast development with Vite
+- 🎨 Clean & responsive UI using Tailwind CSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Usage |
+|----------|------|
+| **React** | UI development |
+| **Redux Toolkit** | State management |
+| **React Redux** | Store connection |
+| **createAsyncThunk** | Async API calls |
+| **ExtraReducers** | Handling async states |
+| **Tailwind CSS** | Styling |
+| **Vite** | Build tool |
+| **Git & GitHub** | Version control |
+
+---
+
+## 🧠 Architecture Overview
+
+The application follows a **feature-based architecture**:
+
+src/
+├── app/
+│ └── store.js
+├── features/
+│ ├── tasks/
+│ │ └── taskSlice.js
+│ └── notification/
+│ └── notificationSlice.js
+├── components/
+│ ├── TaskForm.jsx
+│ ├── TaskList.jsx
+│ ├── TaskItem.jsx
+│ └── Notification.jsx
+├── pages/
+│ └── Home.jsx
+└── main.jsx
+
+
+---
+
+## 🔔 Notification System
+
+The app uses a **Redux-based notification reducer** to show:
+- Success messages
+- Error alerts
+- Warning notifications
+
+Notifications are:
+- Global
+- Auto-dismissed
+- Triggered from async actions and reducers
+
+---
+
+## 🌐 Async API Integration
+
+- API integration handled using `createAsyncThunk`
+- Proper handling of:
+  - `pending`
+  - `fulfilled`
+  - `rejected`
+- Graceful fallback for API failures
+
+---
+
+## 🧪 State Management
+
+Redux Toolkit is used for:
+- Creating slices
+- Managing global state
+- Handling async workflows
+- Keeping UI and logic separated
+
+---
+
+## ▶️ Getting Started
+
+### Clone the repository
+```bash
+git clone https://github.com/YOUR_USERNAME/smart-task-manager.git
+
+
+##Install dependencies:
+  npm install
+
+##Run the project
+  npm run dev
+
+
+
+📌 Future Improvements
+
+✏️ Edit task functionality
+
+🌓 Dark mode
+
+💾 LocalStorage / Database persistence
+
+🔁 Task filters (All / Active / Completed)
+
+🎬 Animations
+
+
+
+
+
+
+👨‍💻 Author
+
+Your Sandeep kumar
+Frontend Developer (React)
